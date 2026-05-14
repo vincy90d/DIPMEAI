@@ -1,0 +1,17 @@
+
+> tmp_app@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1420ms
+ ○ Compiling / ...
+ ✓ Compiled / in 16.9s (1707 modules)
+ GET / 200 in 17954ms
+ ✓ Compiled in 1313ms (840 modules)
+ ✓ Compiled in 931ms (1689 modules)
+ GET / 200 in 381ms
+ ✓ Compiled in 878ms (1689 modules)
+ ✓ Compiled in 824ms (1694 modules)
