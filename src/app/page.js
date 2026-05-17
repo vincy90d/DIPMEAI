@@ -23,7 +23,6 @@ export default function Home() {
         end: 'bottom center',
         onEnter: () => setCameraPosition(pos),
         onEnterBack: () => setCameraPosition(pos),
-        // markers: true,
       })
     })
 
@@ -38,28 +37,28 @@ export default function Home() {
         className="section h-screen flex items-center justify-center bg-transparent"
         data-camera-pos="0,0,5"
       >
-        <h1 className="text-6xl font-bold text-white">Section 1</h1>
+        <h1 className="text-6xl font-bold text-white drop-shadow-lg">Pizza Hero</h1>
       </section>
 
       <section
         className="section h-screen flex items-center justify-center bg-transparent"
         data-camera-pos="2,2,5"
       >
-        <h1 className="text-6xl font-bold text-white">Section 2</h1>
+        <h1 className="text-6xl font-bold text-white drop-shadow-lg">Fresh Ingredients</h1>
       </section>
 
       <section
         className="section h-screen flex items-center justify-center bg-transparent"
         data-camera-pos="-2,-2,5"
       >
-        <h1 className="text-6xl font-bold text-white">Section 3</h1>
+        <h1 className="text-6xl font-bold text-white drop-shadow-lg">Traditional Recipe</h1>
       </section>
 
       <section
         className="section h-screen flex items-center justify-center bg-transparent"
         data-camera-pos="0,5,2"
       >
-        <h1 className="text-6xl font-bold text-white">Section 4</h1>
+        <h1 className="text-6xl font-bold text-white drop-shadow-lg">Order Now</h1>
       </section>
     </div>
   )

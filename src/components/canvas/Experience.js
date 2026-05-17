@@ -5,6 +5,7 @@ import { useFrame } from '@react-three/fiber'
 import { PerspectiveCamera } from '@react-three/drei'
 import * as THREE from 'three'
 import useStore from '@/store/useStore'
+import HeroScene from './HeroScene'
 
 export default function Experience() {
   const meshRef = useRef()
@@ -16,10 +17,6 @@ export default function Experience() {
     state.camera.position.lerp(v.set(...cameraPosition), 0.1)
     state.camera.lookAt(0, 0, 0)
 
-    if (meshRef.current) {
-      meshRef.current.rotation.x += delta * 0.5
-      meshRef.current.rotation.y += delta * 0.2
-    }
   })
 
   return (
@@ -29,10 +26,8 @@ export default function Experience() {
       <ambientLight intensity={0.5} />
       <pointLight position={[10, 10, 10]} intensity={1} />
 
-      <mesh ref={meshRef}>
-        <boxGeometry args={[1, 1, 1]} />
-        <meshStandardMaterial color="orange" />
-      </mesh>
+      {/* Test HeroScene with Pizza Image */}
+      <HeroScene imageSrc="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2070&auto=format&fit=crop" />
     </>
   )
 }
